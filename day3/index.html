@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Accordion</title>
+</head>
+<body>
+    <button class="panel">Block-1</button>
+    <div class="page">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <button class="panel">Block-2</button>
+    <div class="page">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <button class="panel">Block-3</button>
+    <div class="page">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <script>
+        var pan = document.getElementsByClassName('panel');
+        var i;
+
+        for(i = 0; i < pan.length; i++){
+            pan[i].addEventListener('click', function(){
+                this.classList.toggle('active');
+                var animate = this.nextElementSibling;
+                if(animate.style.maxHeight){
+                    animate.style.maxHeight = null;
+                } else{
+                    animate.style.maxHeight = animate.scrollHeight + "px";
+                }
+           });
+        }
+    </script>
+</body>
+</html>

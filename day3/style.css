@@ -1,0 +1,41 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #E3F2FD;
+}
+
+.panel{
+    background-color: #BBDEFB;
+    width: 100%;
+    cursor: pointer;
+    padding: 16px;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .panel:hover{
+    background-color: #90CAF9;
+}
+
+.panel:after{
+    content: '\002B';
+    float: right;
+    font-weight: bold;
+    margin-right: 14px;
+    font-size: 18px;
+}
+
+.active:after{
+    content: "\2212";
+}
+
+.page{
+    padding: 0 16px;
+    background-color: #ECEFF1;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-out;
+    
+}
