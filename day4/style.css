@@ -1,0 +1,45 @@
+body{
+    margin: 0px;
+    padding:0px;
+}
+
+.nav-bar {
+    list-style-type: none;
+    background-color: #18222b;
+    padding:0px;
+    margin:0px;
+    overflow:hidden;
+}
+
+.nav-bar li{
+    float: left;
+}
+
+.nav-bar li a {
+    text-decoration: none;
+    padding: 14px 16px;
+    color:white;
+    display: block;
+    text-align: center;
+}
+
+.nav-bar li:hover:not(.active){
+    background-color: #34495e;
+}
+ 
+.active {
+    background-color: #009dce;
+}
+
+
+
+li.right{
+    float: right;
+}
+
+@media screen and (max-width:600px){
+    li.right,
+    .nav-bar li{
+        float:none;
+    }
+}
