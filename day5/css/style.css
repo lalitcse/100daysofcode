@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700');
+
+body{
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Oxygen', sans-serif;
+}
+
+.container{
+    padding: 18px;
+    background-color: #90CAF9;
+    margin-top: 70px;
+}
+
+input[type=text], input[type=email], input[type=password]{
+    width: 100%;
+    padding: 12px;
+    background: #E3F2FD;
+    border: none;
+    margin: 5px 0 22px 0;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus{
+    background-color: #BBDEFB;
+    outline: none; 
+}
+
+hr{
+    border: 1px solid #BBDEFB;
+    margin-bottom: 25px;
+}
+
+#btn{
+    width: 100%;
+    background-color: #1565C0;
+    padding: 14px;
+    text-align: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+}
+
+#btn:hover{
+    background-color: #0D47A1;
+}
