@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+    <title>form</title>
+</head>
+<body>
+    <div class="container"><br>
+        <h1 class="text-success text-center">Fill out the form below</h1><br>
+        <div class="col-lg-6 m-auto d-block">
+            <form action="welcome.html" onsubmit="return validation()" class="bg-light">
+                <div class="form-group">
+                   <label> Username: </label> 
+                   <input type="text" name="fname" id="uname" class="form-control" placeholder="Enter your name" autocomplete="off">
+                   <span id="username" class="text-danger font-weight-bold"></span>
+                </div>
+                <div class="form-group">
+                    <label> Password: </label> 
+                    <input type="text" name="pword" id="pword" class="form-control" placeholder="Enter your password" autocomplete="off">
+                    <span id="password" class="text-danger font-weight-bold"></span>
+                </div>
+                <div class="form-group">
+                    <label> Confirm password: </label> 
+                    <input type="text" name="confirmp" id="confirm" class="form-control" placeholder="Enter your password" autocomplete="off">
+                    <span id="confirmp" class="text-danger font-weight-bold"></span>
+                </div>
+                <div class="form-group">
+                    <label> Mobile number: </label> 
+                    <input type="text" name="mnumber" id="number" class="form-control" placeholder="Enter your mobile number" autocomplete="off">
+                    <span id="mobile" class="text-danger font-weight-bold"></span>
+                </div>
+                <div class="form-group">
+                    <label> Email: </label> 
+                    <input type="text" name="email" id="mail" class="form-control" placeholder="Enter your email" autocomplete="off">
+                    <span id="email" class="text-danger font-weight-bold"></span>
+                </div>
+
+                <input type="submit" name="submit" value="submit" class="btn btn-success">
+            </form>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
