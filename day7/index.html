@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Progress bar</title>
+</head>
+<style>
+h1{
+    text-align: center;
+}
+
+#main-1{
+    width: 100%;
+    background-color:#CFD8DC;
+}
+
+#main-2{
+    width: 10%;
+    background-color: #6200EA;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    text-align: center;
+}
+
+.btn{
+    width: 100%;
+    background-color: #B388FF;
+    border: none;
+    outline: none;
+    height: 30px;
+    cursor: pointer;
+    padding: 8px;
+    color: white;
+}
+</style>
+<body>
+    <h1>Progress bar with html, css and javascript</h1><br>
+    <div id="main-1">
+        <div id="main-2">10%</div>
+    </div><br>
+    <button class="btn" onclick="move()">Click here to see the Progress</button>
+</body>
+<script>
+    function move(){
+        var elem = document.getElementById("main-2");
+        var width = 10;
+        var id = setInterval(frame, 10);
+        function frame(){
+            if(width >= 100){
+                clearInterval(id);
+            } else {
+                width++;
+                elem.style.width = width + '%';
+                elem.innerHTML = width * 1 +  '%';
+            }
+        }
+    }
+</script>
+</html>
