@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Tammudu');
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 60%;
+    margin: auto;
+}
+.head{
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding: 32px;
+    background-color: rgb(90, 175, 171);
+    font-size: 38px;
+    color: white;
+    
+}
+
+.clock{
+    text-align: center;
+    font-size: 86px;
+    font-family: 'Orbitron', sans-serif;
+}
