@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    height: 33.33vh;
+}
+
+input{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    text-align: center;
+    font-size: 136px;
+    color: white;
+    font-family: 'Baloo', cursive;
+    
+}
