@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+    width: 65% ;
+    margin: auto;
+    
+}
+
+
+
+.img1{
+    margin: auto;
+    margin-top: 100px;
+}
+
+.img2{
+
+
+    position: absolute;
+    top: 340px;
+    left: 160px;
+    
+}
+
+#loading {
+    animation: one 2s infinite linear;
+}
+
+@keyframes one {
+    from {
+            transform: rotate(0deg);
+    }
+    to {
+            transform: rotate(359deg);
+    }
+}
+#loading2 {
+    animation: two 10s infinite linear;
+}
+
+@keyframes two {
+    from {
+            transform: rotate(0deg);
+    }
+    to {
+            transform: rotate(359deg);
+    }
+}
